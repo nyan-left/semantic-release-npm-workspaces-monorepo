@@ -158,7 +158,7 @@ function defaultPlugins() {
       '@semantic-release/exec',
       {
         publishCmd:
-          'npx -y semantic-release-npm-workspaces-monorepo cache ${nextRelease.version}',
+          'npx -y semantic-release-npm-workspaces-monorepo cache ${nextRelease.version} --name ${name}',
       },
     ],
   ];
